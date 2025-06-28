@@ -7,14 +7,17 @@
     "frontend:install": "npm install --prefix frontend",
     "frontend:build": "npm run build --prefix frontend",
     "backend:install": "npm install",
-    "install": "cross-env NODE_ENV=production node backend/src/index.js",
-    "build": "npx npm-run-all backend:install frontend:install frontend:build"
+    "start": "cross-env NODE_ENV=production node backend/src/index.js",
+    "build": "npm-run-all backend:install frontend:install frontend:build",
+    "dev": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "concurrently": "^9.2.0",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^16.6.0",
