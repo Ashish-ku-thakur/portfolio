@@ -4,11 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start:dev": "cross-env NODE_ENV=development nodemon backend/src/index.js",
-    "install": "cross-env NODE_ENV=production node backend/src/index.js"
+    "frontend:install": "npm install --prefix frontend",
+    "frontend:build": "npm run build --prefix frontend",
+    "backend:install": "npm install",
+    "buil": "npm-run-all backend:install frontend:install frontend:build"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +20,8 @@
     "express": "^4.21.2",
     "nodemailer": "^7.0.3",
     "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
