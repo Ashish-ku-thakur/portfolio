@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 8003;
 const _dirname = path.resolve(".");
 
-app.use(cors({ origin: ["https://portfolio-wheat-chi-60.vercel.app"], credentials: true }));
+app.use(cors({ origin: ["https://portfolio-o2bu.vercel.app"], credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
