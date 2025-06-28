@@ -8,8 +8,8 @@
     "frontend:build": "npm run build --prefix frontend",
     "backend:install": "npm install",
     "start": "cross-env NODE_ENV=production node backend/src/index.js",
-    "build": "npm-run-all backend:install frontend:install frontend:build",
-    "dev": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "dev": "npm-run-all backend:install frontend:install frontend:build",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
 
   },
   "keywords": [],
