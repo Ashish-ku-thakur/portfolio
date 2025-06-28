@@ -6,6 +6,7 @@ import { Button } from "../components/ui/button";
 import { useState } from "react";
 import axios from "axios";
 
+let API = "https://portfolio-o2bu.vercel.app";
 const Contact = () => {
   const [contectData, setContectData] = useState({
     name: "",
@@ -30,7 +31,7 @@ const Contact = () => {
     console.log(contectData);
 
     const res = await axios.post(
-      "https://portfolio-o2bu.vercel.app/api/v1/sendmail",
+      `${API}/api/v1/sendmail`,
       {
         contectData,
       },
