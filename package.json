@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start:dev": "cross-env NODE_ENV=development nodemon backend/src/index.js",
+    "install": "cross-env NODE_ENV=production node backend/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.6.0",
+    "express": "^4.21.2",
+    "nodemailer": "^7.0.3",
+    "zod": "^3.25.67"
+  }
+}
