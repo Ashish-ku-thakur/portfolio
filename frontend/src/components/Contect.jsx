@@ -6,7 +6,7 @@ import { Button } from "../components/ui/button";
 import { useState } from "react";
 import axios from "axios";
 
-let API = "https://portfolio-o2bu.vercel.app";
+let API = "https://portfolio-h7np.onrender.com";
 const Contact = () => {
   const [contectData, setContectData] = useState({
     name: "",
