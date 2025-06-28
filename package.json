@@ -6,9 +6,8 @@
   "scripts": {
     "frontend:install": "npm install --prefix frontend",
     "frontend:build": "npm run build --prefix frontend",
-    "backend:install": "npm install",
-    "build": "npx npm-run-all backend:install frontend:install frontend:build",
-    "install": "cross-env NODE_ENV=production node backend/src/index.js"
+    "install": "cross-env NODE_ENV=production node backend/src/index.js",
+    "build": "npx npm-run-all backend:install frontend:install frontend:build"
   },
   "keywords": [],
   "author": "",
