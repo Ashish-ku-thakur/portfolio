@@ -7,7 +7,7 @@
     "frontend:install": "npm install --prefix frontend",
     "frontend:build": "npm run build --prefix frontend",
     "backend:install": "npm install",
-    "buil": "npm-run-all backend:install frontend:install frontend:build"
+    "build": "npm-run-all backend:install frontend:install frontend:build"
   },
   "keywords": [],
   "author": "",
