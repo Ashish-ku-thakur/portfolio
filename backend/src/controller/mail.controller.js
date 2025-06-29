@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 import path from "path";
 
 const currentPath = path.resolve(".");
-console.log(currentPath);
 
 const envFile =
   process.env.NODE_ENV === "production"
@@ -17,7 +16,7 @@ dotenv.config({ path: envFile });
 
 export const sendTheEmail = async (req, res) => {
   const { name, email, message } = req.body.contectData;
-  console.log(process.env.EMAIL);
+  console.log(email);
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: "All fields are required" });

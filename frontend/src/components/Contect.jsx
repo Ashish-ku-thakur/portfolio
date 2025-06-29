@@ -36,7 +36,7 @@ const Contact = () => {
           withCredentials: true,
         }
       );
-      console.log();
+      console.log(res.data);
 
       if (res.data.success) {
         setContectData({
@@ -48,7 +48,7 @@ const Contact = () => {
         alert("message send successfully");
       }
     } catch (error) {
-      console.error("Error sending message:", error);
+      console.error("Error sending message:", error.message);
     }
   };
 
