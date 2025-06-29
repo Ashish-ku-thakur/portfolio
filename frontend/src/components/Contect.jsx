@@ -36,7 +36,17 @@ const Contact = () => {
           withCredentials: true,
         }
       );
-      console.log("res->", res);
+      console.log();
+
+      if (res.data.success) {
+        setContectData({
+          name: "",
+          email: "",
+          message: "",
+        });
+
+        alert("message send successfully");
+      }
     } catch (error) {
       console.error("Error sending message:", error);
     }
@@ -123,7 +133,7 @@ const Contact = () => {
 
           <Button
             type="submit"
-            className="mt-4 w-full bg-gradient-to-r from-orange-400 to-pink-500 text-white font-bold text-lg"
+            className="mt-4 w-full bg-gradient-to-r from-orange-400 to-pink-500 text-white font-bold text-lg bg-blue-400"
           >
             Submit Now
           </Button>
