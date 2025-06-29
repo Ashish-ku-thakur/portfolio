@@ -9,7 +9,7 @@ const Body = () => {
       className="flex flex-col items-center justify-between min-h-screen px-4 py-10 md:px-8"
     >
       {/* Profile Image */}
-      <div className="h-36 w-36 sm:h-40 sm:w-40 md:h-48 md:w-48 rounded-full overflow-hidden mb-6">
+      <div className="h-36 w-36 sm:h-40 sm:w-40 md:h-48 md:w-48 rounded-full overflow-hidden mb-6 mt-10">
         <img
           src={ashish}
           alt="Profile"

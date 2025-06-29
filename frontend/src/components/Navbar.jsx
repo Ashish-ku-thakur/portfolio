@@ -2,6 +2,15 @@ import Logo from "../assets/react.svg";
 import ashish from "../assets/Ashish Photo (2).jpeg";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Menu } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   return (
@@ -43,6 +52,33 @@ const Navbar = () => {
               Connect with me
             </button>
           </AnchorLink>
+        </div>
+
+        <div className="md:hidden text-gray-700">
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <Menu className="h-7 w-7" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <AnchorLink href="#home">
+                <DropdownMenuItem id="#home">Home</DropdownMenuItem>
+              </AnchorLink>
+              <AnchorLink href="#about">
+                <DropdownMenuItem>About me</DropdownMenuItem>
+              </AnchorLink>
+              <AnchorLink href="#projects">
+                 <DropdownMenuItem>Projects</DropdownMenuItem>
+              </AnchorLink>
+              <AnchorLink href="#contect">
+                <DropdownMenuItem>Contect</DropdownMenuItem>
+              </AnchorLink>
+
+             
+             
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
 

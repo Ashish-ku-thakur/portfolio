@@ -15,10 +15,10 @@ const About = () => {
       {/* Grid layout */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         {/* Image Section */}
-        <section className="flex justify-center">
+        <section className="flex justify-center ">
           <AspectRatio ratio={1}>
             <img
-              className="rounded-xl object-cover object-center w-full h-full max-w-[300px] mx-auto"
+              className="rounded-xl object-cover object-center w-full h-full max-w-[300px] mx-auto "
               src={ashish}
               alt="Ashish Kumar Thakur"
             />

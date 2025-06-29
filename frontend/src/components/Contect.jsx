@@ -117,7 +117,7 @@ const Contact = () => {
               onChange={handleSetData}
               required
               placeholder="Type Your Message Here"
-              className="mt-1"
+              className="mt-1 text-gray-800"
             />
           </div>
 
